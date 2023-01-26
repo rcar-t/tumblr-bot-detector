@@ -1,0 +1,4 @@
+requests:
+  api-base-url: https://api.tumblr.com/v2
+  oauth-base-url: https://www.tumblr.com
+  oauth-uri: /oauth/request_token
