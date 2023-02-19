@@ -1,0 +1,6 @@
+requests:
+  apiBaseUrl: https://api.tumblr.com/v2'
+  baseUrl: https://www.tumblr.com
+  oauth: 
+    requestTokenUri: /oauth/request_token
+    authorisationUri: /authorize

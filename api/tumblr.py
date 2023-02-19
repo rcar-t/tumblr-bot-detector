@@ -18,10 +18,10 @@ apiKey = os.environ["API_KEY"]
 url = f'{baseUrl}{username}{uri}'
 payload={"api_key": apiKey}
 
-print(urllib.parse.parse_qsl())
-config = config.load_config()
-request_conf = config["requests"]
-api.request_token(config["requests"][""])
+conf = config.load_config()
+request_url = f'{conf.requests.oauthBaseUrl}{conf.requests.oauthUri}'
+token = api.request_token(request_url, os.environ["CONSUMER_ID"], os.environ["CONSUMER_SECRET"])
+print(token)
 
 
 def main():
